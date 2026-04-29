@@ -5,7 +5,7 @@ Proyecto académico para la empresa ficticia DocuTrack S.A. El programa gestiona
 ## Integrantes y responsabilidades
 
 - Camilo De la Cruz: implementación del modelo BST, controlador de casos de uso, vista de consola y documentación.
-- Santiago Cardona: 
+- Sebastián Cardona: 
 
 ## Requisitos para ejecutar
 
