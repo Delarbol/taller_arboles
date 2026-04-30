@@ -35,7 +35,7 @@ Se implemento un modulo de de pruebas automatizadas que garantiza :
   <img src="docs/test-results.png" alt="Test Results" width="600">
 </p>
 
-## Fkujo De Ejecución
+## Flujo De Ejecución
 
 Al ejecutar el programa, el controller maneja una serie de fases secuenciales, que demuestran el funcionamiento completo del árbol de busqueda, de esta manera:
 
@@ -77,3 +77,8 @@ El recorrido **inorden** confirma que el árbol sigue respetando la propiedad de
 - 3 eliminaciones: hoja, nodo con un hijo y raíz con dos hijos.
 - Recorridos preorden, inorden, postorden y por niveles.
 - Altura final del árbol.
+- Módulo de QA: Implementación de Suite de Pruebas xUnit y evidencia de ejecución.
+
+## NOTA
+
+- `TIP`: Un árbol con 11 nodos teóricamente y preferiblemente deberia tener una altura de 4. Nuestra altura del árbol que es 5 nos indica que el eorden de inserción generó un pequeño desbalance hacia la derecha, pero el rendimiento de búsqueda se conserva eficiente aproximadamente en un 91% respecto a un caso de una efectividad de 100%.
