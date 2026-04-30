@@ -202,6 +202,13 @@ public class ArbolBinario
         return CalcularAltura(Raiz);
     }
 
+    public List<Nodo> ObtenerListaInorden()
+    {
+        var lista = new List<Nodo>();
+        LlenarListaInorden(Raiz, lista);
+        return lista;
+    }
+
     private static (Nodo? NuevoNodo, bool Eliminado, Nodo? NodoEliminado, CasoEliminacion Caso) EliminarNodo(
         Nodo? actual,
         string nombre,
@@ -334,5 +341,12 @@ public class ArbolBinario
         }
 
         return 1 + Math.Max(CalcularAltura(actual.Izquierdo), CalcularAltura(actual.Derecho));
+    }
+    private void LlenarListaInorden(Nodo? nodo, List<Nodo> lista)
+    {
+        if (nodo == null) return;
+        LlenarListaInorden(nodo.Izquierdo, lista);
+        lista.Add(nodo);
+        LlenarListaInorden(nodo.Derecho, lista);
     }
 }
