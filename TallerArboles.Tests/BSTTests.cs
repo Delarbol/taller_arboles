@@ -8,14 +8,14 @@ public class BSTTests
     [Fact]
     public void InsertarDuplicado_DebeRetornarFallo()
     {
-        // Arrange (Preparar)
+        
         var arbol = new ArbolBinario();
         arbol.Insertar("Carpeta_A", true);
 
-        // Act (Ejecutar)
-        var resultado = arbol.Insertar("carpeta_a", true); // Caso case-insensitive
+        
+        var resultado = arbol.Insertar("carpeta_a", true); 
 
-        // Assert (Validar)
+        
         Assert.False(resultado.Exitoso);
         Assert.Contains("ya existe", resultado.Mensaje);
     }
@@ -23,17 +23,17 @@ public class BSTTests
     [Fact]
     public void EliminarNodoConDosHijos_DebeMantenerOrdenInorden()
     {
-        // Arrange
+        
         var arbol = new ArbolBinario();
-        arbol.Insertar("M", true); // Raíz
-        arbol.Insertar("F", true); // Hijo Izquierdo
-        arbol.Insertar("T", true); // Hijo Derecho
+        arbol.Insertar("M", true); 
+        arbol.Insertar("F", true); 
+        arbol.Insertar("T", true); 
 
-        // Act
-        arbol.Eliminar("M"); // Eliminar raíz con dos hijos
+        
+        arbol.Eliminar("M"); 
 
-        // Assert
-        // CAMBIO AQUÍ: Usamos ObtenerListaInorden que fue el que agregamos
+        
+        
         var inorden = arbol.ObtenerListaInorden(); 
         
     
